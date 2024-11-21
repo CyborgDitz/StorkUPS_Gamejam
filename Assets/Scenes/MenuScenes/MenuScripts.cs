@@ -17,6 +17,12 @@ public class MenuScripts : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
+    void Update(){
+        if (Input.anyKeyDown){
+            SceneManager.LoadScene(GameWorld);
+        }
+    }
+
     public void MainMenuButton()
     {
         SceneManager.LoadScene(MainMenu);

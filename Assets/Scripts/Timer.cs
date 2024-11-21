@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,20 +13,26 @@ public class Timer : MonoBehaviour
     public TMP_Text backTimer;
     public TMP_Text frontScore;
     public TMP_Text backScore;
-   
-        void Update()
+
+    float cachedTime;
+
+    void OnEnable(){
+        cachedTime = timeRemaining;
+    }
+
+    void Update()
         {
         
             timeRemaining -= Time.deltaTime;
             
             //If timer reaches zero load game over scene
-            if (timeRemaining <= 0)
-            {
+            if (timeRemaining <= 0){
+                timeRemaining = cachedTime;
                 SceneManager.LoadScene("EndScene&Credit");
             }
             
-            frontTimer.text = timeRemaining.ToString() + ("S");
-            backTimer.text = timeRemaining.ToString() + ("S");
+            frontTimer.text = timeRemaining.ToString("0.00") + ("S");
+            backTimer.text = timeRemaining.ToString("0.00") + ("S");
             
             
             frontScore.text = PointManager.currentPoints.ToString();

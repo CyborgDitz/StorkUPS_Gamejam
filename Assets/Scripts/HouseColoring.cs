@@ -9,15 +9,15 @@ public class HouseColoring : MonoBehaviour
 {
 
     public static Color[] colors = {
-            Color.red, Color.green, Color.blue, Color.yellow, Color.cyan, Color.magenta,
-            new Color(1f, 0.5f, 0f), new Color(0.5f, 0f, 1f), new Color(0f, 0.5f, 1f),
-            new Color(1f, 0.2f, 0.6f), new Color(0.2f, 0.8f, 0.2f), new Color(0.8f, 0.8f, 0.2f),
-            new Color(0.6f, 0.1f, 0.6f), new Color(0.3f, 0.7f, 0.9f), new Color(0.7f, 0.3f, 0.1f),
-            new Color(0.1f, 0.7f, 0.3f), new Color(0.9f, 0.6f, 0.4f), new Color(0.4f, 0.9f, 0.6f),
-            new Color(0.8f, 0.4f, 0.8f), new Color(0.6f, 0.8f, 0.4f), new Color(0.2f, 0.3f, 0.9f),
-            new Color(0.9f, 0.3f, 0.2f), new Color(0.3f, 0.9f, 0.7f), new Color(0.9f, 0.7f, 0.3f),
-            new Color(0.7f, 0.9f, 0.2f), new Color(0.2f, 0.9f, 0.5f), new Color(0.5f, 0.2f, 0.9f),
-            new Color(0.4f, 0.2f, 0.7f), new Color(0.7f, 0.4f, 0.2f), new Color(0.2f, 0.4f, 0.7f)
+            Color.red, Color.green, Color.yellow, Color.cyan, Color.magenta,
+            // new Color(1f, 0.5f, 0f), new Color(0.5f, 0f, 1f), new Color(0f, 0.5f, 1f),
+            // new Color(1f, 0.2f, 0.6f), new Color(0.2f, 0.8f, 0.2f), new Color(0.8f, 0.8f, 0.2f),
+            // new Color(0.6f, 0.1f, 0.6f), new Color(0.3f, 0.7f, 0.9f), new Color(0.7f, 0.3f, 0.1f),
+            // new Color(0.1f, 0.7f, 0.3f), new Color(0.9f, 0.6f, 0.4f), new Color(0.4f, 0.9f, 0.6f),
+            // new Color(0.8f, 0.4f, 0.8f), new Color(0.6f, 0.8f, 0.4f), new Color(0.2f, 0.3f, 0.9f),
+            // new Color(0.9f, 0.3f, 0.2f), new Color(0.3f, 0.9f, 0.7f), new Color(0.9f, 0.7f, 0.3f),
+            // new Color(0.7f, 0.9f, 0.2f), new Color(0.2f, 0.9f, 0.5f), new Color(0.5f, 0.2f, 0.9f),
+            // new Color(0.4f, 0.2f, 0.7f), new Color(0.7f, 0.4f, 0.2f), new Color(0.2f, 0.4f, 0.7f)
         };    // Array to store 30 distinct colors
 
     void Start()

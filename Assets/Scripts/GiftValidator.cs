@@ -50,7 +50,7 @@ public class GiftValidator : MonoBehaviour
         {
             GiftBurned.SetActive(true);
             Debug.Log("Gift got burned!");
-            PointManager.currentPoints -= 5;
+            PointManager.currentPoints += 10;
         }
         else
         {

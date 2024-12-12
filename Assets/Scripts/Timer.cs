@@ -18,6 +18,7 @@ public class Timer : MonoBehaviour
 
     void OnEnable(){
         cachedTime = timeRemaining;
+        PointManager.currentPoints = 0;
     }
 
     void Update()

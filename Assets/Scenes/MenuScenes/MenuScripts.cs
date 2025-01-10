@@ -10,17 +10,10 @@ public class MenuScripts : MonoBehaviour
     public string loadCredits;
 
     public string MainMenu;
-    public string exitGame;
 
     void Start()
     {
         Time.timeScale = 1.0f;
-    }
-
-    void Update(){
-        if (Input.anyKeyDown){
-            SceneManager.LoadScene(GameWorld);
-        }
     }
 
     public void MainMenuButton()

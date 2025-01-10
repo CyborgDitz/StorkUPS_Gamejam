@@ -56,7 +56,7 @@ public class PlayerBehaviour : MonoBehaviour
             rb.velocity = movementDirection;
         }
         
-        if (Input.GetKeyDown(KeyCode.Space) || Input.anyKeyDown && holdingGift != null)
+        if (Input.GetKeyDown(KeyCode.Space) && holdingGift != null)
         {
             mainCamera.transform.position = aimTransform.transform.position;
             mainCamera.transform.rotation = aimTransform.transform.rotation;
@@ -64,7 +64,7 @@ public class PlayerBehaviour : MonoBehaviour
             aimLine.SetActive(true);
         }
         
-        if (Input.GetKeyUp(KeyCode.Space) || !Input.anyKey && readyToDrop)
+        if (Input.GetKeyUp(KeyCode.Space) && readyToDrop)
         {
             DropPresent(holdingGift);
             mainCamera.transform.position = originalTransform.transform.position;
